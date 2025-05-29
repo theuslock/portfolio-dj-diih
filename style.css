@@ -1,0 +1,215 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: white;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  padding: 60px 20px;
+  background: url('bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+header h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  
+}
+
+.sobre-dj {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  color: white; /* ou outra cor que combine com seu fundo */
+  background-color: rgba(0, 0, 0, 0.5); /* opcional: fundo semi-transparente */
+  border-radius: 12px;
+}
+
+.sobre-dj h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.sobre-dj p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+/* Botão Spotify */
+.spotify-button {
+  background-color: #1DB954;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.spotify-button:hover {
+  background-color: #17a44a;
+}
+
+/* Galeria */
+#galeria {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+  color: white;
+}
+
+#galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.leque {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.leque img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(var(--rotate));
+  transform-origin: bottom center;
+  width: 200px;
+  height: auto;
+  transition: transform 0.4s ease, z-index 0.4s;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.leque img:hover {
+  transform: translateX(-50%) rotate(var(--rotate)) scale(1.1);
+  z-index: 5;
+}
+
+/* Rotação individual com variáveis CSS */
+.leque .img1 { --rotate: -30deg; z-index: 1; }
+.leque .img2 { --rotate: -15deg; z-index: 2; }
+.leque .img3 { --rotate: 0deg;   z-index: 3; }
+.leque .img4 { --rotate: 15deg;  z-index: 2; }
+.leque .img5 { --rotate: 30deg;  z-index: 1; }
+
+
+
+h2 {
+    font-size: 3em;
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imagens img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.video-box {
+  max-width: 400px;
+  text-align: center;
+}
+
+.video-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.contato {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+  color: white;
+}
+
+.contato h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contato-links {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-contato {
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-contato.whatsapp {
+  background-color: #25D366;
+}
+
+.btn-contato.instagram {
+  background-color: #E1306C;
+}
+
+.btn-contato.email {
+  background-color: #0072C6;
+}
+
+.btn-contato:hover {
+  opacity: 0.85;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  padding: 20px;
+  font-size: 14px;
+}
