@@ -15,13 +15,15 @@ header {
   text-shadow: 2px 2px 8px #000;
 }
 
-header h1 {
-  font-size: 5em;
-  margin-bottom: 10px;
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.logo {
+  max-width: 800px; /* ajusta a largura máxima */
+  width: 100%;       /* ocupa 100% até o limite */
+  height: 400px;      /* mantém proporção da imagem */
+  display: block;
+  margin: 0 auto;    /* centraliza a imagem */
+  padding: 10px 0;   /* espaço em cima e embaixo */
 }
+
 
 header p {
   font-size: 1.2em;
